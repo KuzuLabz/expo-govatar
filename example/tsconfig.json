@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-govatar": ["../src/index"],
+      "expo-govatar/*": ["../src/*"]
+    }
+  }
+}
