@@ -1,19 +1,10 @@
-import type { StyleProp, ViewStyle } from 'react-native';
+export enum Gender {
+    MALE = 0,
+    FEMALE
+}
 
-export type OnLoadEventPayload = {
-  url: string;
-};
-
-export type ExpoGovatarModuleEvents = {
-  onChange: (params: ChangeEventPayload) => void;
-};
-
-export type ChangeEventPayload = {
-  value: string;
-};
-
-export type ExpoGovatarViewProps = {
-  url: string;
-  onLoad: (event: { nativeEvent: OnLoadEventPayload }) => void;
-  style?: StyleProp<ViewStyle>;
+export type GenderType = keyof typeof Gender;
+export type GenerateAvatarProps = {
+    username?: string;
+    gender?: GenderType;
 };

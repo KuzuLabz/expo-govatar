@@ -3,8 +3,12 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-govatar": ["../src/index"],
-      "expo-govatar/*": ["../src/*"]
+      "expo-govatar": [
+        "../src/index"
+      ],
+      "expo-govatar/*": [
+        "../src/*"
+      ]
     }
   }
 }

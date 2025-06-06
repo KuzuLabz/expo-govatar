@@ -1,9 +1,23 @@
 {
-  "platforms": ["apple", "android", "web"],
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
   "apple": {
-    "modules": ["ExpoGovatarModule"]
+    "modules": [
+      "ExpoGovatarModule"
+    ]
   },
   "android": {
-    "modules": ["expo.modules.govatar.ExpoGovatarModule"]
+    "modules": [
+      "expo.modules.govatar.ExpoGovatarModule"
+    ],
+    "gradleAarProjects": [
+      {
+        "name": "govatar-aar",
+        "aarFilePath": "android/libs/govatar.aar"
+      }
+    ]
   }
 }

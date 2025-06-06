@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.swift_version  = '5.4'
   s.source         = { git: 'https://github.com/KuzuLabz/expo-govatar' }
   s.static_framework = true
+  s.vendored_frameworks = 'Frameworks/Govatar.xcframework'
 
   s.dependency 'ExpoModulesCore'
 
@@ -25,5 +26,5 @@ Pod::Spec.new do |s|
     'DEFINES_MODULE' => 'YES',
   }
 
-  s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
+  s.source_files = 'src/**/*.{h,m,mm,swift,hpp,cpp}'
 end

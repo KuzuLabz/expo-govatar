@@ -25,6 +25,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+ios/Frameworks/*
 
 # Android/IJ
 #
@@ -38,6 +39,7 @@ local.properties
 android.iml
 android/app/libs
 android/keystores/debug.keystore
+*.aar
 
 # Cocoapods
 #
@@ -52,6 +54,13 @@ node_modules/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
+
+# Web
+*.wasm
+
+# Go
+golang/mobile/*.jar
+wasm_exec.js
 
 # Expo
 .expo/*
