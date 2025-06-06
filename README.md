@@ -49,7 +49,7 @@ await loadGovatarWebAsync();
 ```
 
 # API
-### [Functions](https://github.com/KuzuLabz/expo-govatar/blob/main/src/ExpoGovatar.types.ts)
+### [Functions](https://github.com/KuzuLabz/expo-govatar/blob/main/src/index.ts)
 
 #### `generateAvatar({username?: string, gender?: GenderType = 'MALE'}): Promise<string>`
 Generate an avatar  
